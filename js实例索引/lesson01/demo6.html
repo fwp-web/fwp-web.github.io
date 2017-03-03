@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson01-demo6</title>
+    <style>
+        body {
+            font-size: 12px;
+        }
+        .container {
+            margin: 10px auto;
+            width: 200px;
+        }
+        #tips {
+            display: none;
+            margin-top: 5px;
+            padding: 5px;
+            text-align: left;
+            background: #ffefa4;
+            border: 1px solid #ff9900; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label id="check"><input type="checkbox"> 两周以内自动登录</label>
+        <div id="tips">
+            为了您的信息安全，请不要在网吧或公用电脑上使用此功能！
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var check = document.getElementById("check"), 
+                tips = document.getElementById("tips");
+
+            check.onmouseover = function() {
+                tips.style.display = "block";
+            };
+            check.onmouseout = function() {
+                tips.style.display = "none";
+            };
+        };
+    </script>
+</body>
+</html>

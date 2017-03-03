@@ -1,0 +1,127 @@
+.resume {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 94px;
+	width: 980px;
+	height: 1400px;
+}
+.resume-self, 
+.resume-contact, 
+.resume-edu,
+.resume-prac {
+	overflow: hidden;
+}
+.left,
+.right {
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	width: 487px;
+	background-color: #FFF;
+}
+.left {
+	float: left;
+	text-align: right;
+}
+.right {
+	float: right;
+}
+.left h1,
+.right>div {
+	margin-top: 180px;
+}
+.left h1 {
+	margin-right: 80px;
+	font-family: "Microsoft Yahei", Arial;
+	font-size: 20px;
+	font-weight: normal;
+}
+.right p {
+	margin-left: 40px;
+	width: 300px;
+	text-indent: 2em;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.right p span {
+	display: block;
+}
+.right p#college {
+	margin-top: 10px;
+}
+.right p#lib {
+	margin-top: 15px;
+}
+.right p#prac2015, 
+.right p#prac2016, 
+.right p#prac2017 {
+	padding-top: 20px;
+}
+.right p#prac2017 {
+	margin-bottom: 100px;
+}
+.mylogo {
+    position: absolute;
+    top: -54px;
+    left: 390px;
+	width: 180px;
+	height: 180px;
+	border: 10px solid #E8E6E6;
+	border-radius: 180px;
+	background: url(../img-bg/mylogo2.jpg);
+}
+.phone {
+	position: absolute;
+	top: 340px;
+	left: 420px;
+	width: 130px;
+	height: 130px;
+	border: 6px solid #E8E6E6;
+	border-radius: 130px;
+	background: url(../img-bg/phone.jpg);
+}
+.school {
+	position: absolute;
+	top: 580px;
+	left: 420px;
+	width: 130px;
+	height: 130px;
+	border: 6px solid #E8E6E6;
+	border-radius: 130px;
+	background: url(../img-bg/school.jpg);
+}
+.practice {
+	position: absolute;
+	top: 910px;
+	left: 420px;
+	width: 130px;
+	height: 130px;
+	border: 6px solid #E8E6E6;
+	border-radius: 130px;
+	background: url(../img-bg/practice.jpg);
+}
+.year {
+	position: absolute;
+	left: 448px;
+	width: 80px;
+	text-align: center;
+	border: 2px solid #E8E6E6;
+	border-radius: 10px;
+}
+#y2008 {
+	top: 730px;
+}
+#y2011 {
+	top: 760px;
+}
+#y2015-e {
+	top: 820px;
+}
+#y2015-p {
+	top: 1060px;
+}
+#y2016 {
+	top: 1120px;
+}
+#y2017 {
+	top: 1200px;
+}

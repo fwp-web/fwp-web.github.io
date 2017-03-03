@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson01-demo4</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+        }
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">点击将div变成红色</button>
+    <div></div>
+    <div></div>
+    <div></div>
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            var divs = document.getElementsByTagName("div"), 
+                btn = document.getElementsByTagName("button")[0];
+            btn.onclick = function() {
+                for(var i in divs) {
+                    divs[i].style.background = "#f00";
+                }
+            };
+        };
+    </script>
+</body>
+</html>

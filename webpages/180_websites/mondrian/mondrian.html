@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mondrian | Frida</title>
+	<link rel="stylesheet" type="text/css" href="mondrian.css">
+	<script type="text/javascript" src="mondrian.js"></script>
+</head>
+<body>
+	<header>
+		<h1>
+			Pick a color and paint the canvas
+		</h1>
+	</header>
+	<!-- header end -->
+	
+	<div id="main_container">
+		<div id="color_container">
+			<span id="color_1" onclick="getColor(this)"></span>
+			<span id="color_2" onclick="getColor(this)"></span>
+			<span id="color_3" onclick="getColor(this)"></span>
+			<span id="color_4" onclick="getColor(this)"></span>
+		</div>
+		<!-- color container end -->
+		<div id="canvas_container">
+			<div id="row_1">
+				<div id="row_1_span_1" onclick="drawCanvas(this)"></div>
+				<div id="row_1_span_2" onclick="drawCanvas(this)"></div>
+				<div id="row_1_span_3" onclick="drawCanvas(this)"></div>
+				<div id="row_1_span_4" onclick="drawCanvas(this)"></div>
+			</div>
+			<div id="row_2">
+				<div id="row_2_span_1" onclick="drawCanvas(this)"></div>
+				<div id="row_2_span_2" onclick="drawCanvas(this)"></div>
+				<div id="row_2_span_3" onclick="drawCanvas(this)"></div>
+				<div id="row_2_span_4" onclick="drawCanvas(this)"></div>
+			</div>
+			<div id="row_3">
+				<div id="row_3_span_1" onclick="drawCanvas(this)"></div>
+				<div id="row_3_span_2" onclick="drawCanvas(this)"></div>
+				<div id="row_3_span_3" onclick="drawCanvas(this)"></div>
+				<div id="row_3_span_4" onclick="drawCanvas(this)"></div>
+			</div>
+			<div id="row_4">
+				<div id="row_4_span_1" onclick="drawCanvas(this)"></div>
+				<div id="row_4_span_2" onclick="drawCanvas(this)"></div>
+				<div id="row_4_span_3" onclick="drawCanvas(this)"></div>
+				<div id="row_4_span_4" onclick="drawCanvas(this)"></div>
+			</div>
+		</div>
+		<!-- canvas container end -->
+	</div>
+	<!-- main container end -->
+	<footer>
+		<a href="../Homepage.html" id="box1">Home</a>
+		<a href="https://github.com/WeipingFu/180-Websites" id="box2">GitHub</a>
+	</footer>
+</body>
+</html>

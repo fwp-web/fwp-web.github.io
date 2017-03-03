@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task32</title>
+	<link rel="stylesheet" type="text/css" href="task32.css">
+</head>
+<body>
+	<aside>
+	  <form id="formProduct">
+		<fieldset id="typeSet">
+			<legend>组件类型</legend>
+			<label>
+				<input type="radio" name="type" id="inputSet" checked> 输入框
+			</label>
+			<label>
+				<input type="radio" name="type" id="radioSet"> 单选框
+			</label>
+			<label>
+				<input type="radio" name="type" id="checkboxSet"> 多选框
+			</label>
+			<label>
+				<input type="radio" name="type" id="selectSet"> 下拉框
+			</label>
+			<label>
+				<input type="radio" name="type" id="textareaSet"> 文本域
+			</label>
+		</fieldset>
+		<fieldset id="basicSet">
+			<legend>基本设置</legend>
+			<label>
+				标签：<input type="text" id="name" value="姓名">
+			</label>
+			<label>
+				<input type="radio" name="nece" id="required" checked> 必填
+			</label>
+			<label>
+				<input type="radio" name="nece" id="notRequired"> 选填
+			</label>
+			<label>
+				选择样式：
+				<select id="style">
+					<option value="style1" selected>样式1</option>
+					<option value="style2">样式2</option>
+				</select>
+			</label>
+		</fieldset>
+		<fieldset id="ruleSet">
+			<legend>规则设置</legend>
+			<label>
+				<input type="radio" name="rule" id="text" checked> 普通文本
+			</label>
+			<label>
+				<input type="radio" name="rule" id="pwd"> 密码
+			</label>
+			<label>
+				<input type="radio" name="rule" id="number"> 数字
+			</label>
+			<label>
+				<input type="radio" name="rule" id="email"> 邮箱
+			</label>
+			<label>
+				<input type="radio" name="rule" id="phone"> 手机号码
+			</label>
+		</fieldset>
+		<fieldset id="inputLimitSet">
+			<legend>长度限制</legend>
+			<input type="number" min="1" id="minLen" value="4"> —— 
+				<input type="number" min="1" id="maxLen" value="16">
+		</fieldset>
+		<fieldset id="otherLimitSet" class="hidden">
+			<legend>选项设置</legend>
+			<textarea id="items" rows="3" cols="30" placeholder="用空格、逗号、回车来分隔选项"></textarea>
+		</fieldset>
+		<button type="button" id="add">添加</button>
+	  </form>
+	</aside>
+	<div id="container">
+		<h1>表单展示区</h1>
+		<form>
+		</form>
+	</div>
+	<script type="text/javascript" src="dataSet.js"></script>
+	<script type="text/javascript" src="formSet.js"></script>
+	<script type="text/javascript" src="formCheck.js"></script>
+	<script type="text/javascript" src="validator.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

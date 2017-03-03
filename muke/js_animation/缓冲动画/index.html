@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>缓冲动画</title>
+	<style type="text/css">
+        * {
+	        margin:0;
+	        padding:0;
+        }
+
+		#div1 {
+			position:relative;
+			left:-200px;
+			top:0;
+			width:200px;
+			height:200px;
+			background:purple;
+		}
+
+		#div1 span {
+			width:20px;
+			height:50px;
+			background:skyblue;
+			position:absolute;
+			left:200px;
+			top:75px;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		<span id="share">分享</span>
+	</div>
+	<script type="text/javascript">
+		window.onload = function() {
+	        var div = document.getElementById("div1");
+            div.onmouseover = function() {
+            	move(0);
+            };
+            div.onmouseout = function() {
+            	move(-200);
+            };
+		};
+        var timer = null;
+		function move(target) {
+            clearInterval(timer);
+            var div = document.getElementById("div1"), 
+                speed = 0, 
+                left;
+            timer = setInterval(function() {
+            	left = div.offsetLeft;
+            	speed = (target - left) / 10;
+            	speed = speed>0? Math.ceil(speed):Math.floor(speed);
+            	//console.log(left);
+            	//到达目标
+            	if(left == target) {
+            		clearInterval(timer);
+            	}
+            	else {
+                    div.style.left = left + speed + "px";
+                }
+            }, 30);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson02-demo6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #imglist {
+            margin: 10px auto;
+            padding: 10px 0 0 10px;
+            width: 700px;
+            border: 1px solid #333;
+            list-style: none;
+            overflow: hidden;
+        }
+        #imglist li {
+            float: left;
+            margin: 0 10px 10px 0;
+            border: 1px solid #ccc;
+        }
+        #imglist li img {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            cursor: crosshair;
+        }
+        #imglist li .current {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+    </style>
+</head>
+<body>
+    <ul id="imglist">
+        <li><img src="img/1.jpg" alt="BMW"></li>
+        <li><img src="img/2.jpg" alt="ALFA"></li>
+        <li><img src="img/3.jpg" alt="SKODA"></li>
+        <li><img src="img/4.jpg" alt="DA"></li>
+        <li><img src="img/5.jpg" alt="SAAB"></li>
+        <li><img src="img/6.jpg" alt="LAM"></li>
+        <li><img src="img/7.jpg" alt="POR"></li>
+        <li><img src="img/8.jpg" alt="LION"></li>
+        <li><img src="img/9.jpg" alt="nine"></li>
+        <li><img src="img/10.jpg" alt="ten"></li>
+    </ul>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var imglist = document.getElementById("imglist"), 
+                imgs = imglist.getElementsByTagName("img");
+
+            for(var i in imgs) {
+                imgs[i].onmouseover = function() {
+                    this.className = "current";
+                };
+                imgs[i].onmouseout = function() {
+                    this.className = "";
+                };
+            }
+        };
+    </script>
+</body>
+</html>

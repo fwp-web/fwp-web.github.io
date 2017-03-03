@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task20</title>
+    <style>
+        #rightIn, 
+        #rightOut {
+            margin-right: 20px;
+        }
+        #show {
+            margin-top: 10px;
+        }
+        #show div {
+            float: left;
+            margin-right: 10px;
+            padding: 5px;
+            background: #f00;
+            color: #fff;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+            max-width: 400px;
+            max-height: 200px;
+        }
+        #show div .match {
+            color: #00f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <textarea id="input"></textarea>
+        <button type="button" id="leftIn">左侧入</button>
+        <button type="button" id="rightIn">右侧入</button>
+        <button type="button" id="leftOut">左侧出</button>
+        <button type="button" id="rightOut">右侧出</button>
+
+       <input type="text" placeholder="请输入查询词" id="queryInput">
+       <button type="button" id="query">查询</button>
+    </fieldset>
+
+    <div id="show">  
+    </div>
+
+    <script type="text/javascript" src="task20-2.js"></script>
+</body>
+</html>

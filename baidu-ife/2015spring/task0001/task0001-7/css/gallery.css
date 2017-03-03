@@ -1,0 +1,188 @@
+/* -------------------- gallery styles ------------------- */
+.main-container {
+	position: relative;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 200px;
+	width: 980px;
+}
+.tab a {
+	display: inline-block;
+	margin: 0;
+	padding: 15px 20px 20px;
+	border-top: 4px solid #DABAE6;
+	border-right: 1px solid #D1CECE;
+	background-color: #FFF;
+	font-family: Arial;
+	font-size: 13px;
+	color: #000;
+	text-decoration: none;
+}
+.tab a:hover, 
+.tab a:active {
+	border-top-color: #4F176D;
+}
+.float {
+	padding: 20px 20px 30px;
+	width: 630px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+.float ul li {
+	margin-bottom: 12px;
+	list-style: none;
+}
+.float li h1, 
+.float li p {
+	line-height: 1.5;
+	color: #FFF;
+}
+.float li h1 {
+	padding-top: 12px;
+	font-size: 18px;
+}
+.float li p {
+	padding-bottom: 20px;
+	font-size: 14px;
+}
+.float1, 
+.float2, 
+.float3 {
+	display: inline-block;
+	float: left;
+}
+.float1, 
+.float2 {
+    margin-right: 10px;   
+}
+.float1 {
+	width: 310px;
+}
+.float2, 
+.float3 {
+    width: 150px;
+}
+.float1-1, 
+.float1-2 {
+	float: left;
+    width: 150px;
+}
+.float1-1 {
+	margin-right: 10px;
+}
+.JavaScript {
+	background-color: #51036B;
+}
+.Applications {
+    background-color: #E4C411;
+}
+.Framework {
+	background-color: #9A0742;
+}
+.UI {
+	background-color: #840DF8;
+}
+.more {
+    margin-top: 10px;
+    padding: 20px;
+    width: 630px;
+    background-color: #FFF;
+    text-align: center;
+}
+.more a {
+	color: #949191;
+	font-size: 13px;
+	text-decoration: none;
+}
+/*------------------ aside styles ------------------*/
+aside {
+	position: absolute;
+	left: 680px;
+	top: 74px;
+}
+aside div {
+	padding: 20px;
+	margin-bottom: 10px;
+	background-color: #FFF;
+}
+.search-container {
+	width: 260px;
+	text-align: center;
+}
+.search-container input, 
+.search-container button {
+	display: inline-block;
+    border: 1px solid #D1CECE;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+.search-container input[type="search"] {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 35px;
+	color: #D1CECE;
+	background: url(../img-bg/icon-search.png) no-repeat left center;
+}
+.search-container button {
+	padding: 10px;
+	font-size: 22px;
+	color: #FFF;
+	background-color: #D1CECE;
+}
+.rank h1 {
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #949191;
+}
+.rank ol {
+	list-style: none;
+}
+.rank div {
+	margin: 0;
+	padding: 0;
+}
+.rank ol div {
+    display: inline-block;
+    height: 20px;
+}
+.rank ol p {
+	display: inline-block;
+	font-family: "Microsoft Yahei", Arial;
+	font-size: 14px;
+}
+.rank .order {
+	width: 20px;
+	border-radius: 20px;
+	color: #FFF;
+	text-align: center;
+	background-color: #4B0571;
+}
+.rank .rank-container {
+	margin-bottom: 15px;
+	width: 120px;
+	border-right: 2px solid #4B0571;
+	border-top: 1px solid #4B0571;
+	border-bottom: 1px solid #4B0571; 
+}
+.rank .first, 
+.rank .second, 
+.rank .third, 
+.rank .fourth, 
+.rank .fifth {
+	color: #4B0571;
+	background-color: #4B0571;
+}
+.rank .first {
+    width: 100%;
+}
+.rank .second {
+    width: 80%;
+}
+.rank .third {
+    width: 60%;
+}
+.rank .fourth {
+    width: 40%;
+}
+.rank .fifth {
+    width: 20%;
+}

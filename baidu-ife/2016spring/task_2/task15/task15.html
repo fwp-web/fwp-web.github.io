@@ -1,0 +1,108 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+  </ul>
+
+  <ul id="resort">
+    <!-- 
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+  </ul>
+
+  <button id="sort-btn">排序</button>
+
+<script type="text/javascript">
+
+function $(id) {
+  return document.getElementById(id);
+}
+
+/**
+ * getData方法
+ * 读取id为source的列表，获取其中城市名字及城市对应的空气质量
+ * 返回一个数组，格式见函数中示例
+ */
+function getData() {
+  var sourceList = $("source").getElementsByTagName("li"), 
+      data = [], place, num;
+  for(var i = 0, len = sourceList.length; i < len; i++) {
+      place = sourceList[i].innerHTML.split("空气")[0];
+      num = parseInt(sourceList[i].getElementsByTagName("b")[0].innerHTML);
+      data.push([place, num]);
+     /*
+      var ret = /(\S+)空气质量：<b>(\d+)/.exec(sourceList[i].innerHTML);
+      data.push([ret[1], ret[2]]);
+     */ 
+  }
+  /*
+  data = [
+    ["北京", 90],
+    ["北京", 90]
+    ……
+  ]
+  */
+  return data;
+}
+
+/**
+ * sortAqiData
+ * 按空气质量对data进行从小到大的排序
+ * 返回一个排序后的数组
+ */
+function sortAqiData(data) {
+  data.sort(function(o1, o2) {
+    return o1[1] - o2[1];
+  });
+  return data;
+}
+
+/**
+ * render
+ * 将排好序的城市及空气质量指数，输出显示到id位resort的列表中
+ * 格式见ul中的注释的部分
+ */
+function render(data) {
+  var middle = "空气质量：<b>", 
+      tail = "</b></li>", 
+      display = $("resort"), 
+      innerText = "";
+  for(var len = data.length, i = len - 1; i >= 0; i--) {
+    innerText += "<li>第" + (len-i) + "名：" + data[i][0] + middle + data[i][1] + tail;
+  }
+  display.innerHTML = innerText;
+}
+
+function btnHandle() {
+  var aqiData = getData();
+  aqiData = sortAqiData(aqiData);
+  render(aqiData);
+}
+
+
+function init() {
+  var btn = $("sort-btn");
+  // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+  btn.onclick = btnHandle;
+}
+
+init();
+
+</script>
+</body>
+</html>

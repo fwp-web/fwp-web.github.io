@@ -1,0 +1,37 @@
+h1{
+	color: blue;
+	text-transform: lowercase;
+}
+
+h2{
+	font-size: 14px;
+}
+
+p{
+	font-size: 12px;
+	color: yellow;
+	background-color: black;
+	text-indent: 2em;
+}
+
+span.fontface{
+	font-family: "SingleMalta";
+}
+img{
+	border: 2px solid red;
+}
+
+a{
+	text-decoration: none;
+}
+
+@font-face{
+	font-family: "SingleMalta";
+	src: url("fonts/singlemalta-webfont.eot");     /* IE9+ */
+	src: url("fonts/singlemalta-webfont.eot?#iefix") format("embedded-opentype"),  
+		 url("fonts/singlemalta-webfont.woff") format("woff"), 
+		 url("fonts/SingleMalta.ttf") format("truetype"),
+		 url("fonts/singlemalta-webfont.svg#SingleMalta") format("svg"); 
+	font-style: normal;
+	font-weight: normal;
+}

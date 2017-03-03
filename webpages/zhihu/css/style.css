@@ -1,0 +1,236 @@
+/* ------- basic styles -------- */
+body, div, article,  
+dl, dt, dd, ul, ol, li, 
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, button, textarea,
+p, blockquote, th, td, hr {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f7fafc;
+	font-family: "Microsoft Yahei";
+}
+/*-------- content styles ----------*/
+.content {
+	margin: 80px auto 130px;
+	width: 300px; 
+	text-align: center;
+}
+.content h1 {
+	float: left;
+	margin-left: 25%;
+	margin-bottom: 30px;
+	width: 160px;
+	height: 74px;
+	background: url(../img/logo.png) no-repeat;
+	color: transparent;
+}
+.content p {
+	margin-bottom: 30px;
+	font-size: 18px;
+	color: #555;
+	clear: both;
+}
+.content a {
+	display: inline-block;
+	margin: 0 15px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	color: #9d9fa0;
+	text-decoration: none;
+}
+.content a:hover {
+	color: #555;
+}
+.content .selected {
+	color: #0f88eb;
+	border-bottom: 2px solid #0f88eb;
+}
+.content .selected:hover {
+	color: #0f88eb;
+}
+/*----------- form styles ---------*/
+form {
+    margin: 20px 0 50px;
+}
+fieldset {
+    border: none;
+}
+.userInput {
+	padding: 1px;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+}
+form input[type="text"], 
+form input[type="password"], 
+#IdentifyCode {
+	display: block;
+	margin: 0 auto;
+	padding: 1em .8em;
+    width: 93%;
+    height: 25px;
+    font-size: 14px;
+    border: none;
+    border-top: 1px solid #d5d5d5; 
+    outline: none;
+}
+#IdentifyCode {
+	display: none;
+	position: relative;
+    background-color: #fff;
+}
+#IdentifyCode input {
+	display: inline-block;
+	position: absolute;
+	left: .8em;
+	margin: 0;
+	padding: 0;
+	width: 60%;
+	border: none;
+}
+#showCode {
+	position: absolute;
+	right: .8em;
+} 
+#signUpFs input:first-child, 
+#signInFs input:first-child {
+	border-top: 0;
+}
+form button {
+	display: block;
+	margin: 20px auto;
+	width: 100%;
+	height: 40px;
+	font-family: Arial;
+	font-size: 16px;
+	color: #fff;
+	background-color: #0f88eb;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#signInFs {
+	display: none;
+	position: relative;
+}
+#signInFs label{
+	float: left;
+	margin-bottom: 50px; 
+	font-size: 14px;
+    color: #555;
+}
+#signInFs a {
+	margin: 0;
+	font-size: 14px;
+	color: #555;
+}
+#signInFs .noLogin {
+	float: right;
+}
+#signInFs .otherLogin {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #787878;
+    clear: both;
+}
+#signInFs .otherLogin:hover {
+	color: #555;
+}
+#signInFs #iconsContainer {
+	position: absolute;
+	left: 30%;
+	bottom: 0;
+	display: none;
+}
+#iconsContainer a {
+	display: inline-block;
+	margin-left: 20px;
+	width: 20px;
+	height: 18px;
+}
+#iconsContainer .wechatIcon {
+	background-image: url(../img/sprites.auto.png);
+	background-position: -56px -20px;
+}
+#iconsContainer .weiboIcon { 
+	background-image: url(../img/sprites.auto.png);
+	background-position: 0 -44px;
+}
+#iconsContainer .qqIcon { 
+	background-image: url(../img/sprites.auto.png);
+	background-position: -56px 0;
+}
+form #downloadApp {
+	font-size: 14px;
+	color: #5fa6e5;
+	background-color: inherit;
+	border: 1px solid #96c2e9;
+}
+#downloadApp span:first-child {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	color: transparent;
+	background-image: url(../img/sprites.auto.png);
+	background-position: -78px 0;
+}
+.download {
+	position: relative;
+}
+.download .appCode {
+	display: none;
+	position: absolute;
+	left: -5px;
+	bottom: 70px;
+	width: 310px;
+	height: 310px;
+	background-color: #fff;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
+	border-radius: 10px;
+}
+.appCode .codeImage {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 250px;
+	height: 250px;
+	background-image: url(../img/qr-code.png);
+	background-position: center;
+}
+.appCode .codeIcon {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -14px;
+	margin: auto;
+	width: 54px;
+	height: 42px;
+	background-image: url(../img/sprites.auto.png);
+	background-position: 0 0;
+
+}
+/*------------ footer styles -----------*/
+footer {
+	font-size: 12px;
+	color: #aebdc9;
+	text-align: center;
+}
+footer ul {
+	display: inline-block;
+}
+footer ul li{
+	float: left;
+	margin-left: 20px;
+}
+ul li a {
+	color: #aebdc9;
+	text-decoration: none;
+}
+ul li a:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#left, #main, #right{
+  float: left;
+  height: 100px;
+  overflow: hidden;
+}
+#container{
+  padding: 0 150px 0 100px;
+}
+#main{
+  width: 100%;
+  background-color: yellow;
+}
+#left{
+  width: 100px;
+  margin-left: -100%;
+  position: relative;
+  left: -100px;
+  background-color: red;
+}
+#right{
+  width: 150px;
+  margin-left: -150px;
+  position: relative;
+  right: -150px;
+  background-color: blue;
+}
+

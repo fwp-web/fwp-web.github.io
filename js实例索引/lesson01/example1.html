@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson01</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            text-align: center;
+        }
+        button {
+            width: 50px;
+            height: 20px;
+        }
+        div {
+            margin: 10px auto;
+            width: 100px;
+            height: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">变宽</button>
+    <button type="button">变高</button>
+    <button type="button">变色</button>
+    <button type="button">隐藏</button>
+    <button type="button">重置</button>
+    <div id="change"></div>
+
+    <script type="text/javascript">
+        function changeStyle(obj, attr, value) {
+            obj.style[attr] = value;
+        }
+
+        window.onload = function() {
+            var btns = document.getElementsByTagName("button"), 
+                obj  = document.getElementById("change"), 
+                attrs = ["width", "height", "background", "display"], 
+                values = ["200px", "200px", "#f00", "none"];
+
+            for(var i in btns) {
+                btns[i].index = i;
+                btns[i].onclick = function() {
+                    if(this.index == btns.length-1) {
+                        obj.style.cssText = "";
+                    }
+                    else {
+                        changeStyle(obj, attrs[this.index], values[this.index]);
+                    }
+                }
+            }
+        };
+
+/*        function change() {
+            var buttons = document.getElementsByTagName("button"), 
+                div = document.getElementById("change");
+            for(var i in buttons) {
+                buttons[i].onclick = function() {
+                    if(this.innerHTML == "变宽") {
+                        div.style.width = 200 + "px";
+                    }
+                    else if(this.innerHTML == "变高") {
+                        div.style.height = 200 + "px";
+                    }
+                    else if(this.innerHTML == "变色") {
+                        div.style.background = "#f00";
+                    }
+                    else if(this.innerHTML == "隐藏") {
+                        div.style.display = "none";
+                    }
+                    else {
+                        div.style.width = 100 + "px";
+                        div.style.height = 100 + "px";
+                        div.style.background = "#000";
+                        div.style.display = "block";
+                    }
+                };
+            }
+        }
+*/
+    </script>
+</body>
+</html>

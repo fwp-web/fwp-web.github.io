@@ -1,0 +1,231 @@
+/*body, div, article,  
+dl, dt, dd, ul, ol, li, 
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, button, textarea,
+p, blockquote, th, td, hr {
+	margin: 0;
+	padding: 0;
+}*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+	font-family: SimHei, Arial;
+}
+/* -------  header styles  ------ */ 
+header {
+	position: relative;
+	width: 100%;
+	background-color: #3F3C3C;
+	overflow: hidden;
+}
+.logo {
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+}
+nav {
+	position: absolute;
+	right: 10px;
+	margin-top: 20px;
+}
+nav li {
+	float: left;
+	margin-right: 20px;
+}
+nav li a {
+	color: #FFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+nav li a:hover, 
+nav li a:active {
+	color: #716F6F;
+}
+/* -------  wrap and artcle styles  ------ */
+.wrap {
+	position: relative;
+	background-color: #E4E4E4;
+	overflow: hidden;
+}
+article {
+	margin: 20px 0 20px 20px;
+	margin-right: 435px;
+}
+article,
+aside {
+	padding: 30px 20px 20px;
+	background-color: #FFF;
+	border: 1px solid #AAA7A7;
+	box-shadow: 2px 2px 1px #737272;
+}
+article img {
+	display: inline-block;
+}
+article h2, 
+article h3, 
+article p,
+article img {
+    margin-bottom: 20px; 
+}
+article h3, 
+.info {
+	color: #716F6F;
+}
+article h3 {
+	font-size: 17px;
+}
+article p {
+	line-height: 1.5;
+	text-indent: 2em;
+}
+.info {
+	font-size: 14px;
+	text-indent: 0;
+}
+article ul li {
+	margin: 0 0 10px 20px;
+	list-style: none;
+}
+article figure {
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	width: 130px;
+	text-align: center;
+	border: 1px solid #D3D0D0;
+}
+article figure figcaption {
+	margin: 10px auto;
+	font-size: 13px;
+}
+article figure img {
+	margin-bottom: 10px;
+}
+article ol {
+	margin-left: 60px;
+	margin-bottom: 20px;
+}
+table {
+	width: 99%;
+	margin: 0 auto; 
+	font-size: 13px;
+	border-collapse: collapse;
+}
+table,
+th,
+td {
+	padding: 5px;
+	border: 1px solid #D3D0D0;
+}
+table caption {
+	text-align: left;
+	font-size: 15px;
+}
+table th {
+	text-align: left;
+	color: #FFF;
+	background-color: #313131;
+}
+.sum td {
+	font-weight: bold;
+	background-color: #D3D0D0;
+}
+/* -------  aside styles  ------ */
+aside {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 350px;
+}
+aside h2{
+    padding: 10px;
+    font-size: 16px;
+    border-left: 3px solid #D3D0D0;
+}
+aside form {
+	margin-top: 10px;
+	width: 100%;
+	font-size: 13px;
+}
+form div {
+	margin-bottom: 15px; 
+	width: 100%;
+	overflow: hidden;
+}
+form input, 
+form label {
+	margin-right: 5px;
+}
+form .column1 {
+	float: left;
+	padding-right: 15px;
+	width: 35%;
+	text-align: right;
+	vertical-align: top;
+}
+form .warning {
+    display: block;
+    float: right;
+    margin: 10px 0;
+    width: 60%;
+    color: #9D9B9B;
+}
+form textarea {
+	width: 57%;
+	height: 100px;
+}
+.submit input{
+	padding: 8px 0;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #1873E4;
+	border-radius: 10px;
+}
+/* --- 兼容性 --- */
+input::-webkit-input-placeholder {
+	color: #000;
+}
+input::-moz-placeholder {
+	color: #000;
+}
+input:-moz-placeholder {
+	color: #000;
+}
+input:-ms-input-placeholder {
+	color: #000;
+}
+/* --- 兼容性 --- */
+textarea::-webkit-input-placeholder {
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+}
+textarea::-moz-placeholder {
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+}
+textarea:-moz-placeholder {
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+}
+textarea:-ms-input-placeholder {
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+}
+/* -------  footer styles  ------ */
+footer {
+	padding: 20px 0 30px;
+	text-align: center;
+	background-color: #000;
+}
+footer p{
+	font-size: 14px;
+	color: #FFF;
+}

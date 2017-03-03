@@ -1,0 +1,160 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #aaa;
+	text-align: center;
+}
+
+header h1{
+	margin: 25px auto;
+	color: #333;
+	font-size: 38px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#main_container{
+	margin: 0 auto;
+	width: 65%;
+	border: 1px solid #000;
+	box-shadow: 0 0 8px #000;
+	background-color: #ffffe0;
+	overflow: hidden;
+}
+
+#color_container{
+	width: 15%;
+	float: left;
+}
+
+#color_container span{
+	display: block;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #aaa; 
+}
+
+#color_1{
+	margin-top: 40px;
+	background-color: #cc0000;
+}
+
+#color_2{
+	background-color: #ffec00;
+}
+
+#color_3{
+	background-color: #0000cc;
+}
+
+#color_4{
+	background-color: #FFF;
+}
+
+#color_1, #color_2, #color_3, #color_4{
+	cursor: pointer;
+}
+
+#canvas_container{
+	float: left;
+	margin: 40px;
+	border: 1px solid #000;
+	background-color: #FFF;
+}
+
+#row_1{
+	height: 100px;
+	border-bottom: 10px solid #000;
+}
+
+#row_2{
+	height: 160px;
+	border-bottom: 10px solid #000;
+}
+
+#row_3{
+	height: 80px;
+	border-bottom: 10px solid #000;
+}
+
+#row_4{
+	height: 120px;
+}
+
+#row_1, #row_2, #row_3, #row_4{
+	overflow: hidden;
+}
+
+#canvas_container div div{
+	float: left;
+}
+
+#row_1_span_1, #row_1_span_2, #row_1_span_3, #row_1_span_4{
+	height: 100px;
+}
+
+#row_2_span_1, #row_2_span_2, #row_2_span_3, #row_2_span_4{
+	height: 160px;
+}
+
+#row_3_span_1, #row_3_span_2, #row_3_span_3, #row_3_span_4{
+	height: 80px;
+}
+
+#row_4_span_1, #row_4_span_2, #row_4_span_3, #row_4_span_4{
+	height: 120px;
+}
+
+#row_1_span_1, #row_2_span_1, #row_3_span_1, #row_4_span_1{
+	width: 130px;
+	border-right: 10px solid #000;
+}
+
+#row_1_span_2, #row_2_span_2, #row_3_span_2, #row_4_span_2{
+	width: 300px;
+	border-right: 10px solid #000;
+}
+
+#row_1_span_3, #row_2_span_3, #row_3_span_3, #row_4_span_3{
+	width: 90px;
+	border-right: 10px solid #000;
+}
+
+#row_1_span_4, #row_2_span_4, #row_3_span_4, #row_4_span_4{
+	width: 150px;
+}
+
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 20px 40px;
+	background: rgba(0,0,0,0.1);
+}
+
+footer a{
+	text-decoration: none;
+	margin: 0 5px;
+	padding-left: 5px;
+	font-family: Arial;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #4f4f4f;
+}
+
+#box1{
+	border-left: 14px solid #ff9933;
+}
+
+#box2{
+	border-left: 14px solid #8b00e0;
+}
+
+
+
+

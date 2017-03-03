@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task31</title>
+    <style>
+        form {
+            margin: 0 auto;
+            width: 500px;
+            text-align: center;
+        }
+        section {
+            margin: 30px 0;
+        }
+        section.hidden {
+            display: none;
+        }
+        section.show {
+            display: block;
+        }
+        label {
+            font-family: SimHei;
+            font-size: 20px;
+        }
+        select {
+            margin-left: 10px;
+            width: 200px;
+            height: 30px;
+            font-size: 15px;
+            border: 1px solid #706e6e;
+            border-radius: 3px;
+        }
+        #noStudent_info label, 
+        #student_info label {
+            height: 30px;
+            line-height: 30px;
+            font-size: 18px;    
+        }
+        #city {
+            width: 150px;
+        }
+        #college {
+            width: 250px;
+        }
+        input[type="text"] {
+            margin-left: 10px;
+            padding-left: 10px;
+            width: 350px;
+            height: 30px;
+            border: 1px solid #706e6e;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <h1>个人信息填选</h1>
+        <section id="selection">
+            <label><input type="radio" name="job" id="student" checked="checked"> 在校生</label>
+            <label><input type="radio" name="job" id="noStudent"> 非在校生</label>
+        </section>
+        <section id="student_info" class="show">
+            <label>学校 <select name="city">
+                <option value="cities">请选择城市</option>
+            </select>
+            <select name="college">
+                <option value="cols">请选择学校</option>
+            </select>
+            </label>
+        </section>
+        <section id="noStudent_info" class="hidden">
+            <label>就业单位 <input type="text"></label>
+        </section>
+    </form>
+    <script type="text/javascript" src="task31-2.js"></script>
+</body>
+</html>

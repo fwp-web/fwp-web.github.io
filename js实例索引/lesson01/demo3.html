@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lessson01-demo3</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 5px;
+            width: 150px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <input type="text" value="北京市"></input>
+        <input type="text" value="朝阳区"></input>
+        <button type="button">传参</button>
+    </form>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var inputareas = document.getElementsByTagName("input"), 
+                btn = document.getElementsByTagName("button")[0];
+            btn.onclick = function() {
+                alertValue(inputareas[0], inputareas[1]);
+            };
+        }
+
+        function alertValue(a, b) {
+            alert(a.value);
+            alert(b.value);
+        }
+    </script>
+</body>
+</html>

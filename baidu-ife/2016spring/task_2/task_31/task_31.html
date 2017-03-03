@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单-联动</title>
+	<style type="text/css">
+        body {
+        	margin: 0;
+        	padding: 0;
+        	text-align: center;
+        }
+        form {
+        	margin: 100px auto;
+        }
+        fieldset {
+        	margin-top: 30px;
+            border: 0;
+        }
+        fieldset.hidden {
+        	display: none;
+        }
+        label {
+        	display: inline-block;
+        	margin-right: 20px;
+            font-size: 18px;
+        }
+        #fs1>label, 
+        #fs2>label {
+        	font-size: 16px;
+        	font-weight: bold;
+        }
+        select,
+        input[type="text"] {
+        	margin-left: 20px;
+        	padding-left: 5px;
+        	width: 200px;
+        	height: 40px;
+        	font-size: 16px;
+        	border-radius: 8px;
+        }
+        #school {
+        	width: 300px;
+        }
+        input[type="text"] {
+            width: 400px;
+            border: 1px solid #9C9898;
+        }
+	</style>
+</head>
+<body>
+	<form action="#" method="post" name="form1">
+		<fieldset>
+			<label><input type="radio" name="job" id="undergraduate" checked>在校生</input></label>
+			<label><input type="radio" name="job" id="graduate">非在校生</input></label>
+		</fieldset>
+		<fieldset id="fs1">
+			<label>学校
+                <select name="city" id="city">
+                    <option value="0">请选择所在城市</option>
+                	<option value="Beijing">北京</option>
+                	<option value="Shanghai">上海</option>
+                	<option value="Wuhan">武汉</option>
+                	<option value="Harbin">哈尔滨</option>
+                </select>
+                <select name="school" id="school">
+                    <option value="0">请选择学校</option>
+                </select>
+			</label>
+		</fieldset>
+		<fieldset class="hidden" id="fs2">
+			<label>就业单位<input type="text" placeholder="请填写您的就业单位"></input></label>
+		</fieldset>
+	</form>
+	<script type="text/javascript" src="task_31.js"></script>
+</body>
+</html>

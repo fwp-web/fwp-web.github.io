@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#container{
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+}
+#container div{
+  overflow: hidden;
+}
+#left{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-flex: none;
+  flex: none;
+}
+#right{
+  height: 100px;
+  -webkit-flex: 1;
+  flex: 1;
+  background-color: blue;
+}
+#other{
+  width: 100%;
+  height: 100px;
+  background-color: yellow;
+}

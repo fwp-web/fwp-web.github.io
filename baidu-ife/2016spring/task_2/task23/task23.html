@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task23 24</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 2px;
+			padding: 10px;
+			height: 100%;
+			font-size: 12px;
+		}
+		.default {
+			color: #000;
+			background-color: #fff;
+		}
+		.traverse {
+			background-color: #00f;
+		}
+		.search {
+			color: #fff;
+			background-color: #00f;
+		}
+		.selected {
+			color: #fff;
+			background-color: #f63a64;
+		}
+		.root {
+			margin: 30px auto;
+			width: 98%;
+			height: 250px;
+			border: 1px solid #000;
+		}
+		.child_1 {
+			border: 1px solid #f00;
+		}
+		.child_2 {
+			border: 1px solid #0f0;
+		}
+		.child_3 {
+			border: 1px solid #00f;
+		}
+		.child_4 {
+			border: 1px solid #D705A6;
+		}
+		.child_n {
+			border: 1px solid #f4d630;
+		}
+		fieldset {
+			margin: 10px auto;
+			width: 98%;
+		}
+		button, 
+		input {
+			margin-right: 10px;
+		}
+		#post，
+		#postSearch {
+			margin-right: 50px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="root">
+	Super
+		<div class="child_1">
+			Fruits
+			<div class="child_2">
+			Apple
+				<div class="child_3">Pear</div>
+				<div class="child_3">Banana</div>
+				<div class="child_3">Apple</div>
+				<div class="child_3">Pear</div>
+			</div>
+			<div class="child_2">School</div>
+			<div class="child_2">
+			Sport
+				<div class="child_3">Basketball</div>
+				<div class="child_3">Football</div>
+			</div>
+		</div>
+		<div class="child_1">
+			Food
+			<div class="child_2">
+			Meat
+				<div class="child_3">Chicken</div>
+				<div class="child_3">Chicken</div>
+				<div class="child_3">Chicken</div>
+			</div>
+			<div class="child_2">
+			Vegetables
+				<div class="child_3">
+				Tomato
+					<div class="child_4">Cabbage</div>
+				</div>
+				<div class="child_3">Tomato</div>
+			</div>
+		</div>
+		<div class="child_1">Hello</div>
+	</div>
+	<fieldset>
+		<button id="pre">前序遍历</button>
+		<button id="post">后序遍历</button>
+		<input type="text" placeholder="请输入查询词">
+		<button id="preSearch">前序搜索</button>
+		<button id="postSearch">后序搜索</button>
+		<button id="delete">删除选定节点</button>
+		<input type="text" id="newNode"></input>
+		<button type="button" id="add">添加节点</button>
+	</fieldset>
+
+	<script type="text/javascript" src="task24.js"></script>
+</body>
+</html>

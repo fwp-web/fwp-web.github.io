@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	width: 90%;
+	font-family: Arial;
+	margin: 0 auto;
+	letter-spacing: 2px;
+}
+
+header{	
+	border-bottom: 1px solid gray;
+	padding: 5px 0; 
+	overflow: hidden;
+}
+
+nav a{
+	text-decoration: none;
+	float: right;
+	margin-left: 20px;
+	font-size: 20px;	
+}
+
+nav a:link, nav a:visited{
+	color: #5f5f5f;
+}
+
+nav a:hover, nav a:active{
+	color: #ff9933;
+	font-weight: bold;
+}
+
+#introduction{
+	padding: 15px 0 25px;
+	border-bottom: 1px solid gray;
+}
+
+#introduction a{
+	float: right;
+}
+
+#introduction h1{
+	font-size: 90px;
+	font-weight: bold;
+	color: #ff9933;
+}
+
+#introduction p{
+	font-size: 26px;
+	color: #5f5f5f;
+}
+#introduction p strong{
+	font-size: 40px;
+	color: #ff9933;
+}
+
+#latestWeb{
+	padding: 20px 0 30px;
+	border-bottom: 1px solid gray;
+}
+
+#latestWeb p{
+	text-align: center;
+	font-size: 26px;
+	color: #5f5f5f;
+	line-height: 1.5em;
+}
+
+#latestWeb p a:link{
+	color: #8b00e0;
+	font-weight: bold;
+}
+
+#latestWeb p a:visited{
+	color: #42006a;
+	font-weight: bold;
+}
+
+#webList_container{
+	padding: 25px 0;
+}
+
+#webList_container li{
+	list-style-type: none;
+	margin-bottom: 5px;
+	color: #5f5f5f;
+}
+
+#webList_container li a{
+	margin-left: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#webList_container li a:link{
+	color: #8b00e0;
+}
+
+#webList_container li a:visited{
+	color: #42006a;
+}

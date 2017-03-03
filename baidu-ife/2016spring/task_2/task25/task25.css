@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+    border-color: #fa8d4e;
+}
+legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* ------     query area样式    -------*/
+.query_area {
+    margin: 10px auto;
+    text-align: center;
+}
+input {
+    margin-right: 20px;
+    padding: 3px 8px;
+}
+button {
+    padding: 3px 8px;
+}
+/* ------     handle area样式    -------*/
+.handle_area {
+    margin: 10px auto;
+}
+/* ------    tree区域样式    -------*/
+.root {
+    margin-top: 20px;
+}
+.node_display {
+    display: block;
+    margin: 8px 20px;
+}
+.node_hidden {
+    display: none;
+}
+.node_display.searched>span {
+    background-color: #f00;
+    color: #fff;
+}
+.node_display.traverse>span {
+    background-color: #00f;
+    color: #fff;
+}
+.node_display span {
+    cursor: pointer;
+}
+.node_display span.selected {
+    background-color: #f00;
+    color: #fff;
+}
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+.down_arrow {
+    border-top: 10px solid #4ba106;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+.right_arrow {
+    border-left: 10px solid #4ba106;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+.root span {
+    color: #4ba106;
+}

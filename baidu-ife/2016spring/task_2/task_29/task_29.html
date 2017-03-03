@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证01</title>
+	<style type="text/css">
+        body {
+        	margin-top: 100px;
+        	padding: 0;
+        	text-align: center;
+        	font-family: "Microsoft Yahei";
+        }
+        label {
+        	font-size: 24px;
+        	font-weight: bold;
+        }
+        input, 
+        button {
+        	margin-left: 20px;
+        	height: 50px;
+        	border: 1px solid #A7A4A4;
+        	border-radius: 6px;
+        }
+        input {
+        	width: 300px;
+        }
+        button {
+        	width: 80px;
+        	font-weight: bold;
+        	font-size: 18px;
+        	color: #fff;
+        	background-color: #2665C1; 
+        }
+        span {
+        	display: block;
+        	font-size: 18px;
+        	color: #676464;
+        }
+        .error {
+        	color: #f00;
+        }
+        .right {
+        	color: #0f0;   	
+        }
+        .errorInput {
+            border: 1px solid #f00;
+        }
+        .rightInput {
+        	border: 1px solid #0f0;
+        }
+	</style>
+</head>
+<body>
+	<label for="name">名称</label>
+	<input type="text" id="name"></input>
+	<button id="check">验证</button>
+	<span id="warning">必填，长度为4~16个字符</span>
+	<script type="text/javascript">
+		function formCheck() {
+			document.getElementById("check").addEventListener("click", function() {
+				var inputArea = document.getElementById("name");
+                var input = inputArea.value.trim();
+                var warning = document.getElementById("warning");
+                var inputLength = 0;
+                if(input == "") {
+                    warning.innerHTML = "姓名不能为空";
+                    warning.className = "error";
+                    inputArea.className = "errorInput";
+                }
+                else {
+                	inputLength = calLength(input);
+                	if(inputLength < 4 || inputLength > 16) {
+                		warning.innerHTML = "字符长度必须在4~16位之间";
+                        warning.className = "error";
+                        inputArea.className = "errorInput";
+                	}
+                	else {
+                        warning.innerHTML = "名称格式正确";
+                        warning.className = "right";
+                        inputArea.className = "rightInput";
+                	}
+                }
+			});
+		}
+		function calLength(input) {
+            var len = 0;
+            var char;
+            for(var i=0; i<input.length; i++) {
+            	char = input.charCodeAt(i);
+            	if(char >= 0 && char <= 128) {
+            		len += 1;
+            	}
+            	else{
+            		len +=2;
+            	}
+            }
+            return len;
+		}
+		window.onload = formCheck;
+	</script>
+</body>
+</html>

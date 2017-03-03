@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*    aside区域样式     */
+aside {
+	float: left;
+	margin-right: 30px;
+	padding-top: 15px;
+	padding-left: 10px;
+	width: 300px;
+}
+fieldset {
+	margin-bottom: 15px;
+	padding: 10px;
+}
+fieldset.hidden {
+	display: none;
+}
+fieldset.display {
+	display: block;
+}
+input {
+	margin: 5px;
+}
+#minLen,
+#maxLen {
+	width: 80px;
+}
+button {
+	width: 60px;
+	height: 30px;
+	font-size: 15px;
+}
+/*    container区域样式     */
+#container {
+	position: relative;
+	float: left;
+	margin-top: 10px;
+	padding: 25px 0;
+	width: 70%;
+	text-align: center;
+	border: 1px solid #ACA3A3; 
+	border-radius: 10px;
+}
+#container input {
+	margin-left: 10px;
+}
+#container div {
+	margin-bottom: 15px;
+}
+#container input[type="text"], 
+#container input[type="password"] {
+	padding-left: 5px;
+	width: 200px;
+	height: 25px;
+	border: 1px solid #acaaaa;
+	border-radius: 5px;
+}
+#container input[type="text"].fail, 
+#container input[type="password"].fail {
+	border: 1px solid #f00;
+}
+#container input[type="text"].success, 
+#container input[type="password"].success {
+	border: 1px solid #0f0;
+}
+#container span {
+	position: absolute;
+	right: 100px;
+}
+#container span.default {
+	color: #acaaaa;
+}
+#container span.fail {
+	color: #f00;
+}
+#container span.success {
+	color: #0f0;
+}

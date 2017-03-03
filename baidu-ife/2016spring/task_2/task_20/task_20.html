@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task_20</title>
+	<style type="text/css">
+        body {
+        	font-family: "Microsoft Yahei";
+        }
+        fieldset {
+        	margin: 10px auto;
+        	padding: 15px 20px;
+        	width: 850px;
+        	border-radius: 4px;
+        }
+        textarea {
+        	height: 50px;
+        	border: 1px solid #878484;
+        	border-radius: 4px;
+        }
+        input,
+        button {
+        	height: 25px;
+        	border: 1px solid #878484;
+        	border-radius: 4px;
+        }
+        div {
+            text-align: center;
+        }
+        h1 {
+        	font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+    	<legend>输入数据</legend>
+    	<textarea id="input" placeholder="输入随意字符串，字符串间可用空格、逗号、回车、顿号等隔开"></textarea>
+	    <button id="leftAdd">左侧入</button>
+	    <button id="rightAdd">右侧入</button>
+	    <button id="leftMove">左侧出</button>
+	    <button id="rightMove">右侧出</button>
+    </fieldset>
+	<fieldset>
+		<legend>查询数据</legend>
+		<input placeholder="请输入查询字符串"></input>
+		<button id="search">查询</button>
+	</fieldset>
+	<div id="container">
+	</div>
+	<script type="text/javascript" src="task_20.js"></script>
+</body>
+</html>

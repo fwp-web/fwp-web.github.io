@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:  Arial;
+}
+
+#header{
+	width: 700px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	background-color: #F9CC0E;
+	color: #FBA405;
+	font-size: 20px;
+	letter-spacing: 2px; 
+}
+
+#header div{
+	display: table-cell;
+	height: 100px;
+	width: 100px;
+	padding-left: 10px;
+	vertical-align: bottom;
+}

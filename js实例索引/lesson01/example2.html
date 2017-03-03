@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson01-demo2</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #a3c5a8;
+        }
+        .container {
+            margin: 10px auto;
+            width: 40%;
+        }
+        .btngroup {
+            margin-bottom: 10px;
+            list-style: none;
+        }
+        .btngroup li {
+            float: left;
+            margin-right: 10px;
+            width: 6px;
+            height: 6px;
+            border-width: 4px;
+            border-style: solid;
+            cursor: pointer;
+        }
+        .clearfix::before, 
+        .clearfix::after {
+            content: "";
+            display: table;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+        .clearfix {
+            zoom: 1;
+        }
+        .btngroup .red {
+            background: #f00;
+            border-color: #f00;
+        }
+        .btngroup .green {
+            background: #06773b;
+            border-color: #06773b;
+        }
+        .btngroup .black {
+            background: #000;
+            border-color: #000;
+        }
+        .btngroup li.current {
+            background: #fff;
+        }
+        nav ul {
+            list-style: none;
+            background: #06773b;
+            border: .5px solid #fff;
+        }
+        nav li {
+            float: left;
+            padding: 10px 30px;  
+        }
+        nav li:not(:last-of-type) {
+            border-right: .5px solid #fff;
+        }
+        nav li a {
+            display: block;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="btngroup clearfix">
+            <li class="red"></li>
+            <li class="green current"></li>
+            <li class="black"></li>
+        </ul>
+
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">娱乐</a></li>
+                <li><a href="#">体育</a></li>
+                <li><a href="#">电影</a></li>
+                <li><a href="#">音乐</a></li>
+                <li><a href="#">旅游</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var btngroup = document.getElementsByTagName("ul")[0], 
+                btns = btngroup.getElementsByTagName("li"), 
+                list = document.getElementsByTagName("ul")[1], 
+                body = document.getElementsByTagName("body")[0], 
+                bgs = ["#fdd", "#a3c5a8", "#ccc"],
+                listBgs = ["#f00", "#06773b", "#000"], 
+                classnames = ["red", "green", "black"];
+
+            for(var i in btns) {
+                btns[i].index = i;
+                btns[i].onclick = function() {
+                    for(var j=0; j<btns.length; j++) {
+                        btns[j].className = classnames[j];
+                    }
+                    this.className += " current";
+                    list.style.background = listBgs[this.index];
+                    body.style.background = bgs[this.index];
+                };
+            }
+        };
+
+        function getElesByClass(classname, parent) {     
+            var oParent=parent?document.getElementById(parent):document,
+                eles=[],
+                elements=oParent.getElementsByTagName('*');
+
+            for(var i=0,l=elements.length;i<l;i++){
+                if(elements[i].className.indexOf(classname) != -1){
+                    eles.push(elements[i]);
+                }
+            }
+            return eles;
+        }
+    </script>
+</body>
+</html>

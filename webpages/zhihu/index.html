@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>signin|signup</title>
+	<link rel="stylesheet" type="text/css" href="css/clearfix.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="content">
+    <h1>知乎</h1>
+    <p>与世界分享你的知识、经验和见解</p>
+    <a href="#" class="selected" id="signUp">注册</a><a href="#" id="signIn">登录</a>
+	<form action="#" method="post">
+		<fieldset id="signUpFs">
+		    <div class="userInput">
+				<input type="text" placeholder="姓名"></input>
+            	<input type="text" placeholder="手机号（仅支持中国大陆）"></input>
+            	<input type="password" placeholder="密码（不少于6位）"></input>
+            	<div id="IdentifyCode">
+            		<input type="text" placeholder="验证码"></input><span id="showCode">www</span>
+            	</div>
+            </div>
+            <button type="submit">注册知乎</button>
+		</fieldset>
+		<fieldset id="signInFs">
+		    <div class="userInput">
+				<input type="text" placeholder="手机号或邮箱"></input>
+            	<input type="password" placeholder="密码"></input>
+            </div>
+            <button type="submit">登录</button>
+            <label><input type="checkbox"></input> 记住我</label>
+            <a href="#" class="noLogin">无法登录?</a>
+            <a href="#"class="otherLogin">社交帐号登录</a>
+            <div id="iconsContainer">
+            	<a href="#" class="wechatIcon"></a>
+            	<a href="#" class="weiboIcon"></a>
+            	<a href="#" class="qqIcon"></a>
+            </div>
+		</fieldset>
+		<div class="download">
+		    <button id="downloadApp">
+		        <span>1</span>
+		        <span>下载知乎 App</span>
+		    </button>
+		    <div class="appCode">
+		    	<div class="codeImage"></div>
+		    	<div class="codeIcon"></div>
+		    </div>
+		</div>
+	</form>
+	</div>
+	<footer class="clearfix">
+		<span>&copy;2016 知乎</span>
+		<ul class="clearfix">
+			<li><a href="#">知乎圆桌</a></li>
+			<li><a href="#">发现</a></li>
+			<li><a href="#">移动应用</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">来知乎工作</a></li>
+			<li><a href="#">京 ICP 备 13052560号</a></li>
+			<li>京公网安备 11010802010035 号</li>
+		</ul>
+	</footer>
+	<script type="text/javascript" src="js/getElesByClass.js"></script>
+	<script type="text/javascript" src="js/getStyle.js"></script>
+	<script type="text/javascript" src="js/checkForm.js"></script>
+	<script type="text/javascript" src="js/change.js"></script>
+</body>
+</html>

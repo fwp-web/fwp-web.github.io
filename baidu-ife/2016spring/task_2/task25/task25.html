@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task25</title>
+    <link rel="stylesheet" type="text/css" href="task25.css">
+</head>
+<body>
+<fieldset>
+    <legend>Tree</legend>
+    <div class="query_area">
+        <label>查询：<input type="text" placeholder="查询词"></label>
+        <button type="button" id="search">搜 索</button>
+        <button type="button" id="reset">重 置</button>
+    </div>
+    <div class="handle_area">
+        <label>添加：<input type="text" value="apple"></label>
+        <button type="button" id="delete">删 除</button>
+        <button type="button" id="add">添 加</button>
+    </div>
+    <div class="root">
+        <div class="node_display">
+            <div class="arrow down_arrow"></div>
+            <span>Fruits</span>
+            <div class="node_display">
+                <div class="arrow right_arrow"></div>
+                <span>Apple</span>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Pear</span>
+                </div>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Banana</span>
+                </div>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Apple</span>
+                </div>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Pear</span>
+                </div>
+            </div>
+            <div class="node_display">
+                <div class="arrow empty_arrow"></div>
+                <span>School</span>
+            </div>
+            <div class="node_display">
+                <div class="arrow right_arrow"></div>
+                <span>Sport</span>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Basketball</span>
+                </div>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Football</span>
+                </div>
+            </div>
+        </div>
+        <div class="node_display">
+            <div class="arrow down_arrow"></div>
+            <span>Food</span>
+            <div class="node_display">
+                <div class="arrow right_arrow"></div>
+                <span>Meat</span>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Chicken</span>
+                </div>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Chicken</span>
+                </div>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Chicken</span>
+                </div>
+            </div>
+            <div class="node_display">
+                <div class="arrow right_arrow"></div>
+                <span>Vegetables</span>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Tomato</span>
+                    <div class="node_hidden">
+                        <div class="arrow empty_arrow"></div>
+                        <span>Cabbage</span>
+                    </div>
+                </div>
+                <div class="node_hidden">
+                    <div class="arrow empty_arrow"></div>
+                    <span>Tomato</span>
+                </div>
+            </div>
+        </div>
+        <div class="node_display">
+            <div class="arrow empty_arrow"></div>
+            <span>Hello</span>
+        </div>
+    </div>
+</fieldset>
+<script type="text/javascript" src="task25.js"></script>
+</body>
+</html>

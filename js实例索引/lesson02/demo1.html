@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson02-demo1</title>
+    <style>
+        .container {
+            margin: 10px auto;
+            width: 70px;
+            font-size: 12px;
+        }
+        #input {
+            display: none;
+            margin-top: 5px;
+            padding: 0;
+            color: #00c;
+            list-style: none;
+            border: 1px solid #9a99ff;
+        }
+        #input li {
+            padding: 5px;
+            cursor: pointer;
+        }
+        #input li:last-child {
+            border-top: 1px solid #9a99ff;
+        }
+        #input li:hover {
+            background: #d9e1f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button type="button">输入法</button>
+        <ul id="input">
+            <li>手写</li>
+            <li>拼音</li>
+            <li id="close">关闭</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var btn = document.getElementsByTagName("button")[0], 
+                input = document.getElementById("input"), 
+                close = document.getElementById("close");
+
+            btn.onclick = function() {
+                if(getStyle(input, "display") == "none") {
+                    input.style.display = "block";
+                }
+                else {
+                    input.style.display = "none";
+                }
+            };
+            close.onclick = function() {
+                input.style.display = "none";
+            };
+        };
+
+        function getStyle(obj, attr) {
+            if(obj.currentStyle) {
+                return obj.currentStyle[attr];
+            }
+            else {
+                return getComputedStyle(obj, false)[attr];
+            }
+        }
+    </script>
+</body>
+</html>
