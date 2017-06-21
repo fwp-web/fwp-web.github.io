@@ -16,7 +16,8 @@ export default class PCUserCenter extends React.Component {
 	}
 	componentDidMount() {
 		const myFetchOptions = {
-			method: "GET"
+			method: "GET", 
+			mode: "cors"
 		};
 		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions)
 		.then(response => response.json())

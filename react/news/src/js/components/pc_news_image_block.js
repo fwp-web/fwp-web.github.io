@@ -12,7 +12,8 @@ export default class PCNewsImageBlock extends React.Component {
 
 	componentWillMount() {
 		const myFetchOptions = {
-			method: "GET"
+			method: "GET", 
+			mode: 'cors'
 		};
 		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=" + this.props.type + "&count=" + this.props.count, myFetchOptions)
 		.then(response => response.json())
