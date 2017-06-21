@@ -16,10 +16,9 @@ export default class PCUserCenter extends React.Component {
 	}
 	componentDidMount() {
 		const myFetchOptions = {
-			method: "GET", 
-			mode: "cors"
+			method: "GET"
 		};
-		fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions)
+		fetch("https://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=" + localStorage.userid, myFetchOptions)
 		.then(response => response.json())
 		.then(json => {
 			this.setState({userCollection: json});
